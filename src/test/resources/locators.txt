@@ -1,6 +1,10 @@
 lookup input:
 //*[contains(text(), 'Account Name')]//ancestor::lightning-lookup//input
 
+lookup element:
+//label[contains(text(), 'Reports To')]//following::span[@title='ajo']//ancestor::lightning-base-combobox-item
+//*[@title='ajo']//ancestor::lightning-base-combobox-item
+
 text input:
 //*[contains(text(), 'Last Name')]//ancestor::lightning-input//input
 
@@ -12,3 +16,4 @@ datepicker input:
 
 textarea input:
 //*[contains(text(), 'Mailing Street')]//ancestor::lightning-textarea//textarea
+
